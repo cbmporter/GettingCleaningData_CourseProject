@@ -108,4 +108,4 @@ summary_data <- mean_std_data %>%
   summarize_each(funs(mean))
 
 # Save dataset to a text file
-write.table(summary_data, file = "tidy_uciHAR.txt")
+write.table(summary_data, file = "tidy_uciHAR.txt", row.name=FALSE)
